@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather Search</title>
+  <link rel="stylesheet" href="/assets/index-35f1ef89.css">
+</head>
+<body class="bg-gray-200">
+    <div id="searchbox" class="px-auto px-4 my-auto block justify-center">
+        <div class="px-auto mx-24">
+            <img src="/assets/weather-icon-1995ab6f.svg" alt="weather-icon" class="h-10 mt-40 sm:h-20 block mx-auto mb-6">
+        </div>
+        <input id="searchinput" type="text" onfocus="onHover()" placeholder="Enter your city" class="px-3 py-2 block mx-auto sm:py-2 sm:px-5 w-[200px] focus:w-[220px] sm:w-[320px] sm:focus:w-[450px] font-sans font-medium text-xs sm:text-base rounded-full duration-500">
+        <button onclick="weather()" id="searchbtn" class="py-1 border-2 border-sky-600 hover:bg-sky-600 hover:text-white duration-500 drop-shadow-md active:drop-shadow-none active:bg-sky-800 block my-4 mx-auto sm:py-2 sm:px-5 w-[60px] sm:w-[120px] font-sans font-medium text-[10px] sm:text-base rounded-[40px] sm:rounded-[100px]">Search</button>
+    </div>
+    <div id="resultbox" class="transition-all space-y-4 ease-in text-center mx-2 mt-[10px] sm:space-y-10 sm:mx-52 sm:my-[20px] hidden duration-500 font-sans font-medium text-[10px] sm:text-sm bg-white rounded-xl p-10 text-gray-800">
+        <p id="location"></p>
+        <p id="country"></p>
+        <p id="weatherT"></p>
+        <p id="weatherD"></p>
+        <img src="" id="weatherIcon" class="block mx-auto">
+        <p id="oTemp"></p>
+        <p id="feelLikeTemp"></p>
+        <p id="minT"></p>
+        <p id="maxT"></p>
+        <button onclick="closeit()" id="closebtn" class="bg-sky-700 text-white px-4 py-2 sm:px-6 rounded-md">Close It</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
